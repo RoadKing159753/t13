@@ -1,4 +1,4 @@
-resource "kubernetes_job" "example" {
+resource "kubernetes_job" "exampleJob" {
   metadata {
     name      = "terraform-example"
     namespace = "main"
