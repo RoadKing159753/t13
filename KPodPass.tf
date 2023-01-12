@@ -1,4 +1,4 @@
-resource "kubernetes_pod" "examplePod" {
+resource "kubernetes_pod" "examplePods" {
   metadata {
     name      = "terraform-example"
     namespace = "main"
