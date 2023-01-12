@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: Deployment Template
+  namespace: main
+  labels:
+        environment: production
+spec:
+  template:
+    spec:
+      automountServiceAccountToken: false

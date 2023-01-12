@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod template
+  namespace: main
+  labels:
+        environment: production
+spec:
+  template:
+    spec:
+       automountServiceAccountToken: false

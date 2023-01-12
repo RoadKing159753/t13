@@ -1,0 +1,16 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: CronJob Template
+  namespace: main
+  labels:
+    environment: production
+    template-type: {"CronJob"}
+spec:
+  schedule: "* * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          securityContext:
+

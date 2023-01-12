@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: DaemonSet
+metadata:
+  name: my-daemon
+spec:
+  template:
+    metadata:
+      labels:
+        app: my-daemon
+    spec:
+      hostNetwork: true
+      serviceAccountName: my-sa-account
+      containers:
+      - name: my-daemon
+        image: akhilerm/my-daemon:0.5
+        imagePullPolicy: Always
+        securityContext:
+          capabilities:
+            add: ["NET_BROADCAST", "NET_ADMIN", ..all CAPs..,"SYS_ADMIN"]

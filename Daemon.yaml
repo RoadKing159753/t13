@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: DaemonSet
+metadata:
+  name: DaemonSet Template
+  namespace: default
+  labels:
+    environment: production
+    template-type: ["DaemonSet"]
+spec:

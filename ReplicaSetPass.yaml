@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ReplicaSet
+metadata:
+  name: ReplicaSet Template
+  namespace: main
+  labels:
+        environment: production
+spec:
+  template:
+    spec:
+      securityContext:
+
