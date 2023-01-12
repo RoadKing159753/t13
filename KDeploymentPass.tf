@@ -1,4 +1,4 @@
-resource "kubernetes_deployment" "exampleDeploy" {
+resource "kubernetes_deployment" "exampleDeploys" {
   metadata {
     name = "terraform-example"
     namespace = "main"
